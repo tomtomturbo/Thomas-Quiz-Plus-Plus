@@ -1,4 +1,4 @@
-function validation() {
+function validation1() {
     // Hole die Liste aller ausgewählten Checkboxen (checked).
     let radioButton = document.querySelectorAll('input[type=radio]:checked'); //CSS3 Selektor!!!!!
 
@@ -7,8 +7,6 @@ function validation() {
         setWarning("Bitte wähle eine Antwort aus.");
         return false; // Submit-Aktion abbrechen 
     }
-
-    return false;
 }
 
 function setWarning(text) {

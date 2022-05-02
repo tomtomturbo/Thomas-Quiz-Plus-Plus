@@ -38,7 +38,7 @@ else {
 <div class="container-fluid p-5 mt-5">
     <h3>Frage <?php echo $currentQuestionIndex +1 ; ?></h3>
     <?php echo $questions[$currentQuestionIndex]['Text']; ?>
-    <form <?php if ($currentQuestionIndex + 1 >= count($questions)) echo 'action="result.php" '; ?>method="post" onsubmit="return validation();">
+    <form <?php if ($currentQuestionIndex + 1 >= count($questions)) echo 'action="result.php" '; ?>method="post" onsubmit="return validation1();">
         <?php
         $answers = $questions[$currentQuestionIndex]['Answers'];
         $isMultipleChoice = $questions[$currentQuestionIndex]['isMultipleChoice'];
