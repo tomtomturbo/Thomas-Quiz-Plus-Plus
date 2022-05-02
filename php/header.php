@@ -12,7 +12,7 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-custom">
+<nav class="navbar navbar-expand-lg navbar-light  fixed-top" id="header-bs">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Quiz++</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,19 +41,13 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex">
+      <!--form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+      </form-->
     </div>
   </div>
 </nav>
 
-<?php
-$dbHost = getenv('DB_HOST');
-$dbName = getenv('DB_NAME');
-$dbUser = getenv('DB_USER');
-$dbPassword = getenv('DB_PASSWORD');
 
-$dbh = new PDO("mysql:host=$dbHost;dbname=$dbName;charset=utf8", $dbUser, $dbPassword);
 
