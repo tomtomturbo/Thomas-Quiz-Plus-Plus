@@ -4,10 +4,18 @@
 
     include 'php/header.php';
     ?>
-
+<br>
+<br>
+<br>
+<div class="container">
 <h3> QUIZZY</h3>
 
+<br>
+<br>
+<br>
+
 <form action = "question.php" method="post">
-    <button type="submit" class="btn btn-outline-success btn-sm" value="Start"></button>
+    <input type="submit" class="btn btn-outline-success pl-5 btn-sm " value="Start"></button>
     <p class = "warning"></p>
 </form>
+</div>

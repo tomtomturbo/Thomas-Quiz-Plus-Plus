@@ -32,16 +32,21 @@ else {
 //print_r($_SESSION['questions']);
 //echo '<pre>';
 //echo '<pre>';
-//print_r($questions[$currentQuestionIndex]);
+//print_r($questions[$currentQuestionIndex]);    
+
+
+
 ?>
 
 <div class="container-fluid p-5 mt-5">
     <h3>Frage <?php echo $currentQuestionIndex +1 ; ?></h3>
-    <?php echo $questions[$currentQuestionIndex]['Text']; ?>
+    <p><?php echo $questions[$currentQuestionIndex]['Text']; ?></p>
     <form <?php if ($currentQuestionIndex + 1 >= count($questions)) echo 'action="result.php" '; ?>method="post" onsubmit="return validation1();">
         <?php
+        
         $answers = $questions[$currentQuestionIndex]['Answers'];
         $isMultipleChoice = $questions[$currentQuestionIndex]['isMultipleChoice'];
+        $maxPoints = 0;
 
         for ($i = 0; $i < count($answers); $i++) {
             echo  '<div class="form-check">';
